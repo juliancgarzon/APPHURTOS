@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Título -->
+
+    <!-- Tipo de Hurto -->
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Reporte de Hurto"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_tipo_hurto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Hurto"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/text_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinner_tipo_hurto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_tipo_hurto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Número de Placa -->
+    <EditText
+        android:id="@+id/edit_numero_placa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Número de placa (opcional)"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/spinner_tipo_hurto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Color -->
+    <EditText
+        android:id="@+id/edit_color"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Color"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/edit_numero_placa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Modelo -->
+    <EditText
+        android:id="@+id/edit_modelo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Modelo"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/edit_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Kilometraje -->
+    <EditText
+        android:id="@+id/edit_kilometraje"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Kilometraje"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/edit_modelo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Otros Datos -->
+    <EditText
+        android:id="@+id/edit_otros_datos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Otros datos (opcional)"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toBottomOf="@id/edit_kilometraje"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Descripción del Hurto -->
+    <EditText
+        android:id="@+id/edit_descripcion_hurto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Descripción del hurto"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        app:layout_constraintTop_toBottomOf="@id/edit_otros_datos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Dirección -->
+    <EditText
+        android:id="@+id/edit_direccion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Dirección"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/edit_descripcion_hurto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón para Enviar el Reporte -->
+    <Button
+        android:id="@+id/btn_enviar_reporte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#A52F29"
+        android:text="Enviar Reporte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_direccion" />
+</androidx.constraintlayout.widget.ConstraintLayout>
