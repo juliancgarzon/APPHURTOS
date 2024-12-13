@@ -20,8 +20,8 @@ data class ApiResponse(
 
 object AppConstantes {
 
-    //const val BASE_URL = "http://192.168.0.113:3000"
-   const val BASE_URL = "http://172.21.11.135:3000"
+    const val BASE_URL = "http://192.168.0.113:3000"
+   //const val BASE_URL = "http://172.21.11.135:3000"
 }
 
 interface WebService {
