@@ -24,7 +24,7 @@ La aplicación de reporte de hurtos es una solución diseñada para que los usua
 
 1. Clona el repositorio:
    ```bash
-   git clone [https://github.com/tuusuario/app-hurtos.git](https://github.com/juliancgarzon/APPHURTOS.git)
+   git clone [https://github.com/tuusuario/app-hurtos.git]
    ```
 2. Abre el proyecto en Android Studio.
 3. Configura las claves de la API de Google Maps en el archivo `google_maps_api.xml`.
